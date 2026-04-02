@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Turkish Scanner - Türkiye'nin Yeni Nesil Hibrit Arama Motoru">
+    <meta name="author" content="Turkish Scanner Team">
+    <title>Turkish Scanner | Web'i Keşfet</title>
+    
+<link rel="stylesheet" href="turkish.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="nav-left-links">
+                <ul class="nav-list">
+                    <li><a href="#" class="active"><i class="fas fa-search"></i> Hepsi</a></li>
+                    <li><a href="#"><i class="fas fa-newspaper"></i> Haberler</a></li>
+                    <li><a href="#"><i class="fas fa-image"></i> Görseller</a></li>
+                    <li><a href="#"><i class="fas fa-video"></i> Videolar</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Haritalar</a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i> Alışveriş</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-right-actions">
+                <div class="weather-widget-mini">
+                    <i class="fas fa-sun"></i>
+                    <span>İstanbul 24°C</span>
+                </div>
+                <div class="notification-bell">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">3</span>
+                </div>
+                <div class="user-profile">
+                    <button class="btn-login" id="authBtn">Oturum Aç</button>
+                    <div class="avatar-circle" id="avatarCircle">TS</div>
+                    <button id="logoutBtn" style="display:none; background:#ea4335; color:white;">Çıkış</button>
+                    <select id="themeSelect" style="margin-left:10px;">
+                        <option value="light">Açık</option>
+                        <option value="dark">Koyu</option>
+                        <option value="gray">Gri</option>
+                        <option value="blue">Lacivert</option>
+                    </select>
+                </div>
+                <div class="app-launcher">
+                    <i class="fas fa-th"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-wrapper">
+        
+        <section class="search-hero">
+            <div class="logo-container">
+                <h1 class="ts-logo">
+                    <span class="t-letter">T</span>urkish<span class="s-scanner">Scanner</span>
+                </h1>
+                <p class="slogan">Aradığınız her şey, tek bir taramada.</p>
+            </div>
+
+            <div class="search-engine-box">
+                <form action="#" method="GET" class="search-form-pro">
+                    <div class="input-wrapper">
+                        <i class="fas fa-search glass-icon"></i>
+                        <input type="text" id="main-search" placeholder="İnternet üzerinde güvenle ara..." autofocus>
+                        <div class="input-tools">
+                            <button type="button" title="Sesli Arama"><i class="fas fa-microphone"></i></button>
+                            <button type="button" title="Görselle Ara"><i class="fas fa-camera"></i></button>
+                            <button type="button" title="Ekran Klavyesi"><i class="fas fa-keyboard"></i></button>
+                        </div>
+                    </div>
+                    <div class="action-btns">
+<button type="submit" id="search-btn" class="ts-btn primary">TS ile Ara</button>
+                        <button type="button" class="ts-btn secondary">Şansımı Dene</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="content-dashboard">
+            
+            <aside class="side-panel trend-panel">
+                <div class="panel-header">
+                    <h3><i class="fas fa-fire"></i> Popüler Aramalar</h3>
+                </div>
+                <ul class="trend-list">
+    <li><span class="rank">1</span> <a href="#">Kuantum Bilgisayarlar 2026</a> <i class="fas fa-arrow-up"></i></li>
+                    <li><span class="rank">2</span> <a href="#">USD/TRY 2026 Tahmini</a> <i class="fas fa-chart-line"></i></li>
+                    <li><span class="rank">3</span> <a href="#">AI Olimpiyatları Türkiye</a> <i class="fas fa-robot"></i></li>
+                    <li><span class="rank">4</span> <a href="#">Mars Görevi Güncellemeleri</a> <i class="fas fa-rocket"></i></li>
+                    <li><span class="rank">5</span> <a href="#">Metaverse Ekonomi 2026</a> <i class="fas fa-vr-cardboard"></i></li>
+                    <li><span class="rank">6</span> <a href="#">Sürdürülebilir Enerji TR</a> <i class="fas fa-solar-panel"></i></li>
+                    <li><span class="rank">7</span> <a href="#">Web3 Geliştirme Kursları</a> <i class="fas fa-blockchain"></i></li>
+                    <li><span class="rank">8</span> <a href="#">Uzun Yaşam Teknolojileri</a> <i class="fas fa-heartbeat"></i></li>
+                </ul>
+            </aside>
+
+            <div class="news-feed">
+                <div class="feed-header">
+                    <h2>Günün Öne Çıkanları</h2>
+                </div>
+                
+                <article class="news-card-large">
+                    <div class="news-img-placeholder">GÖRSEL: Teknoloji Dünyasında Devrim</div>
+                    <div class="news-details">
+                        <span class="category">TEKNOLOJİ</span>
+                        <h3>Turkish Scanner Hibrit Algoritması Duyuruldu</h3>
+                        <p>Arama sonuçlarında %40 daha hızlı sonuç veren yeni TS-V2 çekirdeği bugün tüm kullanıcılara açıldı.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 2 saat önce</span>
+                            <span><i class="far fa-comment"></i> 45 Yorum</span>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="news-grid-small">
+                    <div class="mini-card">
+                        <h4>Ekonomi: Borsada Yeni Rekor</h4>
+                        <p>BIST 100 endeksi bugün tarihi zirvesini gördü...</p>
+                    </div>
+                    <div class="mini-card">
+                        <h4>Spor: Transferde Son Dakika</h4>
+                        <p>Ünlü yıldız Türkiye yolunda, detaylar netleşiyor...</p>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="side-panel finance-panel">
+                <div class="finance-header">
+                    <h3><i class="fas fa-wallet"></i> Piyasalar</h3>
+                </div>
+                <div class="finance-table">
+                    <div class="f-row"><span>USD/TRY</span> <span class="up">35.20 <i class="fas fa-caret-up"></i></span></div>
+                    <div class="f-row"><span>EUR/TRY</span> <span class="down">38.45 <i class="fas fa-caret-down"></i></span></div>
+                    <div class="f-row"><span>ALTIN/GR</span> <span class="up">2850 <i class="fas fa-caret-up"></i></span></div>
+                    <div class="f-row"><span>BITCOIN</span> <span class="up">150,000 <i class="fas fa-caret-up"></i></span></div>
+                </div>
+
+                <div class="tool-box">
+                    <h3>Hızlı Araçlar</h3>
+                    <div class="tool-grid">
+                        <div class="tool-item"><i class="fas fa-calculator"></i><p>Hesapla</p></div>
+                        <div class="tool-item"><i class="fas fa-language"></i><p>Çeviri</p></div>
+                        <div class="tool-item"><i class="fas fa-clock"></i><p>Dünya Saati</p></div>
+                        <div class="tool-item"><i class="fas fa-cloud"></i><p>Hava</p></div>
+                    </div>
+                </div>
+            </aside>
+
+        </section>
+
+        <section class="shortcuts-container">
+            <div class="shortcut-item">
+                <div class="icon-box youtube"><i class="fab fa-youtube"></i></div>
+                <span>YouTube</span>
+            </div>
+            <div class="shortcut-item">
+                <div class="icon-box github"><i class="fab fa-github"></i></div>
+                <span>GitHub</span>
+            </div>
+            <div class="shortcut-item">
+                <div class="icon-box twitter"><i class="fab fa-twitter"></i></div>
+                <span>Twitter</span>
+            </div>
+            <div class="shortcut-item">
+                <div class="icon-box reddit"><i class="fab fa-reddit"></i></div>
+                <span>Reddit</span>
+            </div>
+            <div class="shortcut-item add-new">
+                <div class="icon-box plus"><i class="fas fa-plus"></i></div>
+                <span>Ekle</span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="ts-footer">
+        <div class="footer-top-line">
+            <p>Konum: <strong>İstanbul, Türkiye</strong> - İnternet IP adresinizden belirlendi.</p>
+        </div>
+        <div class="footer-main-links">
+            <div class="footer-col">
+                <a href="#">Hakkımızda</a>
+                <a href="#">Nasıl Çalışır?</a>
+                <a href="#">Reklam Çözümleri</a>
+            </div>
+            <div class="footer-col">
+                <a href="#">Gizlilik İlkeleri</a>
+                <a href="#">Kullanım Şartları</a>
+                <a href="#">Çerez Politikası</a>
+            </div>
+            <div class="footer-col">
+                <a href="#">Geliştiriciler</a>
+                <a href="#">İletişim</a>
+                <a href="#">Destek Merkezi</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+<p>&copy; 2026 Turkish Scanner v2.0. Geleceğin Arama Motoru. Tüm Hakları Saklıdır. (Güncellendi: 02.04.2026)</p>
+
+        </div>
+    </footer>
+
+    <script src="turkish.js"></script>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Turkish Scanner Giriş</h2>
+                <span class="close">&times;</span>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>E-posta</label>
+                    <input type="email" id="loginEmail" placeholder="email@ornek.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Şifre</label>
+                    <input type="password" id="loginPassword" placeholder="şifren" required>
+                </div>
+                <button type="submit" class="ts-btn primary full-width">Giriş</button>
+            </form>
+            <div class="modal-footer">
+                <p>Hesabın yok? <a href="#" id="showRegister">Kayıt ol</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="registerModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Turkish Scanner Kayıt</h2>
+                <span class="close">&times;</span>
+            </div>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label>E-posta</label>
+                    <input type="email" id="regEmail" placeholder="email@ornek.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Ad</label>
+                    <input type="text" id="regName" placeholder="Adın" required>
+                </div>
+                <div class="form-group">
+                    <label>Şifre</label>
+                    <input type="password" id="regPassword" placeholder="şifre" required>
+                </div>
+                <button type="submit" class="ts-btn primary full-width">Kayıt Ol</button>
+            </form>
+            <div class="modal-footer">
+                <p>Hesabın var? <a href="#" id="showLogin">Giriş yap</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
